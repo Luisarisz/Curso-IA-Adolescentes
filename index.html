@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>LaboratorIA — Piensa. Crea. Automatiza.</title>
+<meta name="description" content="Curso interactivo de IA para adolescentes: aprende a razonar, crear y automatizar con inteligencia artificial usando lógica y sentido común, no memoria.">
+<meta name="theme-color" content="#0A0D10">
+<meta name="color-scheme" content="dark light">
+
+<!-- PWA -->
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="LaboratorIA">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23F5B93F'/%3E%3Cpath d='M18 4 L9 18 H15 L13 28 L24 13 H17 Z' fill='%230A0D10'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,500,400&f[]=general-sans@400,500,600,700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-theme="dark">
+<a href="#app" class="skip-link">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="#/" class="brand" aria-label="LaboratorIA — inicio">
+      <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M18 2 L7 18 H14 L12 30 L25 12 H17 Z"/></svg>
+      <span data-brand-name>LaboratorIA<small data-brand-tagline>Piensa. Crea. Automatiza.</small></span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+      <a href="#/" data-route="/">Inicio</a>
+      <a href="#/semana/1" data-route="/semana/1">Semanas</a>
+      <a href="#/cuaderno" data-route="/cuaderno">Cuaderno</a>
+      <a href="#/anexos" data-route="/anexos">Anexos</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn install-btn" id="installBtn" aria-label="Instalar la app" title="Instalar la app" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12M8 11l4 4 4-4M5 21h14"/></svg>
+      </button>
+      <button class="profile-chip" id="profileBtn" aria-label="Cambiar de perfil" title="Cambiar de perfil">
+        <span class="profile-chip-emoji" id="profileChipEmoji">⚡</span>
+        <span class="profile-chip-name" id="profileChipName">Perfil</span>
+      </button>
+      <button class="icon-btn" id="saveBtn" aria-label="Copia de seguridad de tu progreso" title="Copia de seguridad / transferir progreso">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2Z"/><path d="M12 12v6M9 15h6"/></svg>
+      </button>
+      <button class="icon-btn" id="themeBtn" aria-label="Cambiar tema claro/oscuro" title="Cambiar tema">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="themeIcon"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M18.5 18.5L20 20M5 19l1.5-1.5M18.5 5.5L20 4"/></svg>
+      </button>
+      <button class="icon-btn mobile-nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="app" tabindex="-1"></main>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<div id="profileModalRoot"></div>
+<div id="timerBanner" class="timer-banner" hidden></div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span data-footer-left>LaboratorIA · un curso familiar hecho a la medida.</span>
+    <span data-footer-credit></span>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/data.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>
